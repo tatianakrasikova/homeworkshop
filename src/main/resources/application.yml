@@ -1,0 +1,20 @@
+  #string.application.name shop_49
+  #string.datasourse.url=jdbs:postgres://localhost:5433/g_49_shop
+  #string.datasourse.username=my_user
+  #string.datasourse.password=pos1234
+  #string.datasourse.driver-class-name=org.postgresql.Driver
+
+
+
+ spring:
+   datasource:
+     url: jdbc:postgresql://localhost:5433/homeworkshop
+     username: my_user
+     password: pos1234
+     driver-class-name: org.postgresql.Driver
+
+   application:
+     name: Shop
+  
+   liquibase:
+     change-log: classpath:db/changelog/changelog-master.xml
